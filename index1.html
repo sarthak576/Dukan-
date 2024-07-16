@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dukan</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <!-------------------------- Google fire base script ----------------------------------->
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyAFHCpK0cf9UpYe9kMnkJhvB-FzmJZMoe8",
+      authDomain: "dukaan-website.firebaseapp.com",
+      projectId: "dukaan-website",
+      storageBucket: "dukaan-website.appspot.com",
+      messagingSenderId: "657995556337",
+      appId: "1:657995556337:web:dbbe9cda9ac8760f375050",
+      measurementId: "G-Q2CFCP08QP"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+ 
+
+
+
+  <!-------------------------- Google fire base script ----------------------------------->
+
+    <div class="header">
+
+    
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+               <a href="index1.html"> <img src="Screenshots/dukan logo.svg" width="125px" alt="logo"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index1.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                   
+                    <li><a href="Account.html">Account</a></li>
+    
+    
+                </ul>
+            </nav>
+           <a href="cart.html"> <img src="Screenshots/cart1.png" width="30px" height="30px" alt="bag"></a>
+            <img src="Screenshots/menu-removebg-preview.png" class="menu" onclick="menutoggle()">
+
+
+        </div>
+        <div class="row">
+            <div class="col-2">
+            <h1>Shop On Fingertips!<br>Hurry Shop
+            Now... </h1>
+            <p>
+                “Don't settle for average. 
+                Bring your best to the moment. 
+                Then, whether<br> it fails or succeeds, 
+                at least you know you gave all you had.”
+            </p>
+            <a href="" class="btn">Explore Now  &#8594;</a>
+            </div>
+            <div class="col-2">
+             <img src="Screenshots/shop.png" alt="onlinestore">
+            </div>
+
+        </div>
+    </div>
+</div>
+  <!------- featured categories -------------->
+<div class="categroies">
+   
+    <div class="small-container">
+
+  <div class="row">
+    <div class="col-3">
+        <img src="Screenshots/atta.webp"  >
+        <div class="rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <i class="fa fa-star" aria-hidden="true"></i>
+
+        </div>
+    </div>
+    <div class="col-3">
+        <img src="Screenshots/rice.webp"  >
+        <div class="rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+
+
+        </div>
+    </div>
+    <div class="col-3">
+        <img src="Screenshots/oil.webp"  >
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+
+    </div>
+
+</div>
+</div>
+</div>
+  <!------- featured Products -------------->
+  <div class="small-container">
+    <h2 class="title">Featured Products</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src="Screenshots/oreo.webp" >
+            <h4>Oreo 500gm pack</h4>
+            <div class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <i class="fa fa-star" aria-hidden="true"></i>
+
+            </div>
+            <p>₹123.00</p>
+        </div>
+        <div class="col-4">
+            <img src="Screenshots/chips.webp"  alt="chips">
+            <h4>Bingo Mad Angles</h4>
+            <div class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+
+            </div>
+            <p>₹10.00</p>
+        </div>
+       
+        
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <img src="Screenshots/clinic+.webp"  alt="oreo">
+            <h4>Clinic+ 340ml</h4>
+            <div class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+
+            </div>
+            <p>₹191.00</p>
+            <p>(56/100ml)</p>
+        </div>
+        <div class="col-4">
+            <img src="Screenshots/dal.webp"  alt="chips">
+            <h4>Natureland Arhar/Toor Dal</h4>
+            <div class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+
+            </div>
+            <p>₹84.00</p>
+            <p>168/kg</p>
+        </div>
+       
+        
+    </div>
+    <h2 class="title">Latest Products</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src="Screenshots/taj tea.webp" alt="oreo">
+            <h4>Taj Tea 250gm pack</h4>
+            <div class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <i class="fa fa-star" aria-hidden="true"></i>
+
+            </div>
+            <p>₹203.00</p>
+        </div>
+        <div class="col-4">
+            <img src="Screenshots/maggie5.webp" alt="maggie">
+            <h4>Maggie Noodles (Pack of 18)</h4>
+            <div class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+
+            </div>
+            <p>₹238.00</p>
+            <p>(₹18.89/100g)</p>
+        </div>
+       
+        
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <a href="productdetails.html"><img src="Screenshots/biryani1.jpg" alt="badam"></a>
+            <a href="productdetails.html"><h4>Fortune Biryani Special Basmati Rice ( 1 kg)</h4></a>
+            <div class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <i class="fa fa-star" aria-hidden="true"></i>
+
+            </div>
+            <p>₹320.00</p>
+        </div>
+        <div class="col-4">
+            <img src="Screenshots/surfexel.webp" alt="maggie">
+            <h4>Surf excel Easy Wash Detergent Powder 1.5 kg</h4>
+            <div class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+
+            </div>
+            <p>₹196.00</p>
+            <p>(₹131/100g)</p>
+        </div>
+       
+        
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <img src="Screenshots/pepsi.webp" alt="pepsi">
+            <h4>Pepsi Can  (250 ml)</h4>
+            <div class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+
+            </div>
+            <p>₹35.00</p>
+            <p>(124/L)</p>
+        </div>
+        <div class="col-4">
+            <img src="Screenshots/masala.webp" alt="maggie">
+            <h4>Tata Sampann Meat Masala (100 g)</h4>
+            <div class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+
+            </div>
+            <p>₹59.00</p>
+            <p>(₹147.5/250g)</p>
+        </div>
+       
+        
+    </div>
+
+  </div>
+  <!--            offer        -->
+  <div class="offer">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-2">
+                <img src="Screenshots/ashirwad-removebg-preview.png" class="offer-img">
+            </div>
+            <div class="col-2">
+                <p>Exclusive Available on Dukan</p>
+                <h1>Ashirwad Atta + Madhur Sugar</h1>
+                <h4>Only At ₹1,006.00</h4>
+                <small>
+                    
+                </small>
+                <a href="" class="btn">Buy Now &#8594;</a>
+            </div>
+
+        </div>
+    </div>
+  </div>
+
+<!--------------testimonial----------------->
+
+<div class="testimonial">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+                <span class="fa fa-quote-left"></span>
+
+                <p>“Be passionate and bold. Always keep learning. 
+                    You stop doing useful things
+                     if you don’t learn.”  </p>
+
+                      <span class="fa fa-quote-right"></span>
+                      <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+        
+                    </div>
+                    <br>
+                    <br>
+                    <img src="Screenshots/nadela.jpg" alt="">
+                    <h3>Satya Nadella</h3>     
+            </div>
+            <div class="col-3">
+                <span class="fa fa-quote-left"></span>
+
+                <p>“I noticed people queuing up in the pantry every day, 
+                    trying to look for menus to order food and that’s 
+                    when the idea struck me – 
+                    what if we could access these menus online,”  </p>
+                      <span class="fa fa-quote-right"></span>
+                      <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+        
+                    </div>
+                    <img src="Screenshots/models1.jpg" class="goyal"
+                    alt="">
+                    <h3>Deepinder Goyal</h3>     
+            </div>
+            <div class="col-3">
+                <span class="fa fa-quote-left"></span>
+
+                <p> "Life is what happens when you're busy making other plans.
+                    You only live once, but if you do it right, once is enough."  </p>
+                      <span class="fa fa-quote-right"></span>
+                      <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+        
+                    </div>
+                    <img src="Screenshots/models.jpg" alt="">
+                    <h3>Kayra Advani</h3>     
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---------------------------brands----------------------->
+
+<div class="brands">
+    <div class="small-container">
+        <div class="row ">
+            <div class="col-5">
+                <img src="Screenshots/Nestle-Logo.png"width="70" height="70" >
+            </div>
+            <div class="col-5">
+                <img src="Screenshots/godrej3.png" width="70" height="70">
+            </div>
+            <div class="col-5">
+                <img src="Screenshots/Pepsi-Logo.png"width="70" height="70">
+            </div>
+            <div class="col-5">
+                <img src="Screenshots/cadbury-removebg-preview.png"width="70" height="70">
+            </div>
+            <div class="col-5">
+                <img src="Screenshots/amul.png" width="70" height="70">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--------------------    footer      ---------------->
+
+ <div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                
+                <p>Download App For Android and ios mobil phone.</p>
+           <div class="app-logo">
+            <img src="Screenshots/lolo-removebg-preview.png" alt="">
+           </div> 
+            </div>
+            <div class="footer-col-2">
+             <img src="" alt="">
+                <p>Can’t do enough online shopping! 
+                    No pesky sales people
+                     and it’s so\
+                     much fun to get presents delivered to my door.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                 <ul>
+                 <li>Coupons</li>
+                 <li>Blog Post</li>
+                 <li>Return Policy</li>
+                 <li>Join Affiliate</li>
+
+                 
+
+                 </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                 <ul>
+                 <li>Facebook</li>
+                 <li>Twitter</li>
+                 <li>Instagram</li>
+                 <li>YouTube</li>
+
+                 
+
+                 </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copy">Copyright 2022 - Dukan</p>
+    </div>
+ </div>
+<!----------------------js for toggle menu--------------------->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px"
+
+    function menutoggle(){
+   
+        if (MenuItems.style.maxHeight =="0px"){
+                MenuItems.style.maxHeight = "200px"
+
+        }
+        else{
+                MenuItems.style.maxHeight = "0px"
+
+        }
+
+    }
+</script>
+</body>
+</html>
